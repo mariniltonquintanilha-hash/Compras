@@ -1,0 +1,5 @@
+{
+  "name": "🛒 Lista de Compras Pro",
+  "description": "Uma aplicação completa de lista de compras com interface moderna, cálculos em tempo real, persistência JSON e atalhos de teclado.",
+  "requestFramePermissions": []
+}
