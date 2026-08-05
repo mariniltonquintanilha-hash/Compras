@@ -1,66 +1,52 @@
-# 🛒 Lista de Compras Pro
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 
-Uma aplicação web simples e eficiente para gerenciar sua lista de compras, desenvolvida com React, Vite e TypeScript. Organize seus itens, acompanhe os preços e tenha um resumo financeiro do que foi comprado e do que ainda está pendente.
+# Compras — Lista de Compras Pro
 
-## ✨ Recursos
+> Aplicação web para gerenciar listas de compras, desenvolvida com **React + Vite + TypeScript**.
 
-*   **Adicionar Itens:** Adicione novos itens à sua lista com nome, preço e quantidade.
-*   **Marcar como Comprado:** Alterne facilmente o status de um item entre "comprado" e "pendente".
-*   **Remover Itens:** Exclua itens individualmente da sua lista.
-*   **Limpar Lista:** Opção para remover todos os itens da lista de uma vez.
-*   **Auto-salvamento:** Suas alterações são salvas automaticamente a cada 5 modificações no armazenamento local do navegador, garantindo que você não perca seus dados.
-*   **Salvar/Carregar JSON:** Exporte sua lista de compras para um arquivo JSON ou importe uma lista existente.
-*   **Resumo Financeiro:** Visualize o valor total da lista, o quanto já foi gasto em itens comprados e o valor pendente.
-*   **Atalhos de Teclado:**
-    *   `Ctrl + S` (ou `Cmd + S` no macOS): Salva a lista em um arquivo JSON.
-    *   `Delete`: Remove o item selecionado na tabela.
-*   **Interface Intuitiva:** Design limpo e responsivo para uma experiência de usuário agradável.
+## 📌 Sobre o Projeto
 
-## 🚀 Tecnologias Utilizadas
+Aplicação simples e eficiente para organizar sua lista de compras: adicione itens com nome, preço e quantidade, acompanhe o resumo financeiro e exporte os dados quando quiser.
 
-*   **React:** Biblioteca JavaScript para construção de interfaces de usuário.
-*   **Vite:** Ferramenta de build frontend que oferece uma experiência de desenvolvimento extremamente rápida.
-*   **TypeScript:** Superset do JavaScript que adiciona tipagem estática para maior robustez do código.
-*   **Tailwind CSS:** Framework CSS utility-first para estilização rápida e responsiva.
+## ✨ Funcionalidades
 
-## 🛠️ Instalação e Uso
+- ➕ Adicionar itens com nome, preço e quantidade
+- ✅ Marcar itens como comprados/pendentes
+- 🗑️ Remover itens ou limpar a lista
+- 💾 Auto-salvamento no armazenamento local do navegador
+- 📤 Salvar/carregar lista em **JSON**
+- 📊 Resumo financeiro (total, gasto e pendente)
+- ⌨️ Atalhos de teclado (`Ctrl+S` salva, `Delete` remove o selecionado)
+- 📱 Interface limpa e responsiva
 
-Para configurar e rodar o projeto localmente, siga os passos abaixo:
+## 🚀 Como Executar
 
-1.  **Clone o repositório:**
-    ```bash
-    git clone https://github.com/seu-usuario/lista-de-compras-pro.git
-    cd lista-de-compras-pro
-    ```
-    *(Ajuste o comando `git clone` para o URL correto do seu repositório)*
+```bash
+# instalar dependências
+npm install
 
-2.  **Instale as dependências:**
-    ```bash
-    npm install
-    # ou
-    yarn install
-    ```
+# ambiente de desenvolvimento
+npm run dev
 
-3.  **Inicie o servidor de desenvolvimento:**
-    ```bash
-    npm run dev
-    # ou
-    yarn dev
-    ```
-    O aplicativo estará disponível em `http://localhost:5173` (ou outra porta disponível).
+# build de produção
+npm run build
+```
 
-4.  **Para construir para produção:**
-    ```bash
-    npm run build
-    # ou
-    yarn build
-    ```
-    Os arquivos de produção serão gerados na pasta `dist/`.
+## 📁 Estrutura do Projeto
 
-## 🤝 Contribuição
-
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests.
+```
+├── App.tsx                    → Componente principal
+├── components/
+│   ├── AddItemForm.tsx        → Formulário de novos itens
+│   ├── ShoppingTable.tsx      → Tabela de itens
+│   └── Summary.tsx            → Resumo financeiro
+├── utils/formatters.ts        → Formatação de valores
+├── types.ts                   → Tipos TypeScript
+└── vite.config.ts             → Configuração do Vite
+```
 
 ## 📄 Licença
 
-Este projeto está licenciado sob a Licença Verkupp. Consulte o arquivo `LICENSE` para mais detalhes.
+Projeto desenvolvido para fins de portfólio.
